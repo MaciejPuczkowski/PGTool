@@ -1,8 +1,8 @@
 from typing import List, Optional, Dict, AsyncGenerator
 from asyncpg import Connection
-from migration_driver import MigrationDriver, AsyncpgMigrationDriver
-from exceptions import LastMigrationNotUsed, MigrationIncorrectHead
-from migrations import Migration
+from .migration_driver import MigrationDriver, AsyncpgMigrationDriver
+from .exceptions import LastMigrationNotUsed, MigrationIncorrectHead
+from .migrations import Migration
 
 
 class AlreadyExists(Exception):

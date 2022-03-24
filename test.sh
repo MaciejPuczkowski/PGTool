@@ -1,2 +1,2 @@
-PYTHONPATH="$(pwd)/src/:$(pwd)/tests/" \
+PYTHONPATH="$(pwd)/apgtool/:$(pwd)/tests/" \
 pytest --asyncio-mode=strict -s "$@"
